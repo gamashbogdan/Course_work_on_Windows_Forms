@@ -1,1 +1,1 @@
-# Course_work_on_Windows_Forms
+# Курсова робота з Windows Forms
