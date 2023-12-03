@@ -1,6 +1,6 @@
 ﻿namespace Course_work_on_Windows_Forms
 {
-    partial class Form1
+    partial class Notepad
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notepad));
             contextMenuStripRichTextBox = new ContextMenuStrip(components);
             copyToolStripMenuItem = new ToolStripMenuItem();
             pasteToolStripMenuItem1 = new ToolStripMenuItem();
@@ -395,7 +395,7 @@
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
             openToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;
-            openToolStripMenuItem.Size = new Size(268, 26);
+            openToolStripMenuItem.Size = new Size(286, 26);
             openToolStripMenuItem.Text = "Open document";
             openToolStripMenuItem.Click += toolStripButtonLoadFile_Click;
             // 
@@ -404,7 +404,7 @@
             saveToolStripMenuItem.Image = (Image)resources.GetObject("saveToolStripMenuItem.Image");
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
-            saveToolStripMenuItem.Size = new Size(268, 26);
+            saveToolStripMenuItem.Size = new Size(286, 26);
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += toolStripButtonSave_Click;
             // 
@@ -421,7 +421,7 @@
             newDocumentToolStripMenuItem.Image = (Image)resources.GetObject("newDocumentToolStripMenuItem.Image");
             newDocumentToolStripMenuItem.Name = "newDocumentToolStripMenuItem";
             newDocumentToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            newDocumentToolStripMenuItem.Size = new Size(268, 26);
+            newDocumentToolStripMenuItem.Size = new Size(286, 26);
             newDocumentToolStripMenuItem.Text = "New document";
             newDocumentToolStripMenuItem.Click += toolStripButtonAddTab_Click;
             // 
@@ -430,21 +430,21 @@
             removeDocumentToolStripMenuItem.Image = (Image)resources.GetObject("removeDocumentToolStripMenuItem.Image");
             removeDocumentToolStripMenuItem.Name = "removeDocumentToolStripMenuItem";
             removeDocumentToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
-            removeDocumentToolStripMenuItem.Size = new Size(268, 26);
+            removeDocumentToolStripMenuItem.Size = new Size(286, 26);
             removeDocumentToolStripMenuItem.Text = "Remove document";
             removeDocumentToolStripMenuItem.Click += toolStripButtonRemoveTab_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(265, 6);
+            toolStripSeparator1.Size = new Size(283, 6);
             // 
             // exitToolStripMenuItemExit
             // 
             exitToolStripMenuItemExit.Image = (Image)resources.GetObject("exitToolStripMenuItemExit.Image");
             exitToolStripMenuItemExit.Name = "exitToolStripMenuItemExit";
             exitToolStripMenuItemExit.ShortcutKeys = Keys.Alt | Keys.F4;
-            exitToolStripMenuItemExit.Size = new Size(268, 26);
+            exitToolStripMenuItemExit.Size = new Size(286, 26);
             exitToolStripMenuItemExit.Text = "Exit";
             exitToolStripMenuItemExit.Click += exitToolStripMenuItemExit_Click;
             // 
@@ -561,7 +561,7 @@
             toolStripSeparator2.Name = "toolStripSeparator2";
             toolStripSeparator2.Size = new Size(205, 6);
             // 
-            // Form1
+            // Notepad
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -571,8 +571,9 @@
             Controls.Add(toolStrip1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
-            Name = "Form1";
-            Text = "Form1";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Notepad";
+            Text = "Notepad";
             contextMenuStripRichTextBox.ResumeLayout(false);
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();

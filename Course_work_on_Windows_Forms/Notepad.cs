@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Course_work_on_Windows_Forms
 {
-    public partial class Form1 : Form
+    public partial class Notepad : Form
     {
-        public Form1()
+        public Notepad()
         {
             InitializeComponent();
             OpenTabs();
@@ -135,7 +135,8 @@ namespace Course_work_on_Windows_Forms
         }
         private void toolStripButtonCopy_Click(object sender, EventArgs e)
         {
-            SelectedNameTb.Copy();
+            if (SelectedNameTb != null)
+                SelectedNameTb.Copy();
         }
         private void toolStripButtonCut_Click(object sender, EventArgs e)
         {
@@ -168,7 +169,8 @@ namespace Course_work_on_Windows_Forms
             ColorDialog colorDialog = new ColorDialog();
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.SelectionColor = colorDialog.Color;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.SelectionColor = colorDialog.Color;
             }
         }
         private void toolStripButtonSetingColorFont_Click(object sender, EventArgs e)
@@ -176,7 +178,8 @@ namespace Course_work_on_Windows_Forms
             ColorDialog colorDialog = new ColorDialog();
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.SelectionBackColor = colorDialog.Color;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.SelectionBackColor = colorDialog.Color;
             }
         }
         private void toolStripButtonSetingText_Click(object sender, EventArgs e)
@@ -184,7 +187,8 @@ namespace Course_work_on_Windows_Forms
             FontDialog fontDialog = new FontDialog();
             if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.SelectionFont = fontDialog.Font;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.SelectionFont = fontDialog.Font;
             }
         }
         private void exitToolStripMenuItemExit_Click(object sender, EventArgs e)
@@ -197,7 +201,8 @@ namespace Course_work_on_Windows_Forms
             FontDialog fontDialog = new FontDialog();
             if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.Font = fontDialog.Font;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.Font = fontDialog.Font;
             }
         }
         private void bacColorAllTexlToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,7 +210,8 @@ namespace Course_work_on_Windows_Forms
             ColorDialog colorDialog = new ColorDialog();
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.BackColor = colorDialog.Color;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.BackColor = colorDialog.Color;
             }
         }
         private void foreColorAllTextToolStripMenuItem_Click(object sender, EventArgs e)
@@ -213,7 +219,8 @@ namespace Course_work_on_Windows_Forms
             ColorDialog colorDialog = new ColorDialog();
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                SelectedNameTb.ForeColor = colorDialog.Color;
+                if (SelectedNameTb != null)
+                    SelectedNameTb.ForeColor = colorDialog.Color;
             }
         }
         private void AddTab()
